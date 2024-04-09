@@ -1,0 +1,9 @@
+2. Напишіть SQL-запит, який для таблиці orders до атрибута date додає один день. На екран виведіть атрибут id,
+оригінальний атрибут date та результат додавання.
+
+SELECT
+    id,
+    date AS original_date,
+    date + INTERVAL 1 DAY AS date_after_adding_one_day
+FROM
+    orders;
